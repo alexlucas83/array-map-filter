@@ -39,6 +39,9 @@ Exemple d'entrée:
  */
 
 function searchWordFilter(items, search) {
+  return items.filter(function(item){
+    return item.toLowerCase().includes(search.toLowerCase());
+  })
 }
 
 // Ne pas modifier l'export
